@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, text
 
-
+import os
 db_conn = os.environ['DB_CONN']
 
 
