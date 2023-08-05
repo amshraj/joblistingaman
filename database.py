@@ -1,11 +1,11 @@
 from sqlalchemy import create_engine, text
 
 
-#db_connection_string = os.environ['DB_CONNECTION_STRING']
+db_conn = os.environ['DB_CONN']
 
 
 engine = create_engine(
-  'mysql+pymysql://root:root@localhost:3306/flask',
+  db_conn ,
 connect_args={
     "ssl": {
       "ssl_ca": "/etc/ssl/cert.pem"
