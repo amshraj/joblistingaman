@@ -5,7 +5,7 @@ db_conn = os.environ['DB_CONN']
 
 
 engine = create_engine(
-  db_conn ,
+  'mysql+pymysql://amsh9470:$#AMan9470@amsh9470.mysql.pythonanywhere-services.com/default',
 connect_args={
     "ssl": {
       "ssl_ca": "/etc/ssl/cert.pem"
